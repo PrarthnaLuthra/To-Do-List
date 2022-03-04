@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Creative-Wallpaper-HD.jpg); */
+ background-image: url(media/background.jpg);
+  /* background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80); */
+  background-size: cover;
+  background-position: center;
+}
+#container {
+  width: 500px;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+ul li:hover {
+  background-image: linear-gradient(to right,rgb(172 174 152), rgb(255 255 255));
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+} 
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 30px;
+    padding: 5px 0px;
+    border-radius: 3px;
+
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right,rgb(172 174 152), rgb(255 255 255));
+  color: rgb(53, 8, 17);
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(92, 20, 20)),
+    color-stop(0.52, rgb(93, 168, 182)),
+    color-stop(0.76, rgb(51, 173, 182))
+    
+ 
+);
+    background-clip: inherit;
+    background-clip: initial;
+    background-clip: revert;
+   background-clip: unset;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  
+}
+.add-task {
+  width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid #2698ac;
+    box-shadow: 0px 0px 10px 3px rgb(28, 182, 182);
+    margin-bottom: 3px;
+}
+#total-tasks {
+  margin-bottom: 20px;
+  font-size: 13px;
+    margin-left: 2px;
+    color: rgb(51, 18, 18);
+}
